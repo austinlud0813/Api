@@ -2,37 +2,110 @@
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-
-}
-
-
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media (min-width: 576px) {
 
 body {
-  background-color: url("images/background.png");
+  background-color: #D4D4D4;
 }
 
-.container {
-  background-color: red;
-  width: 100%;
-  height: 100%;
+h2, h3 {
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 #header {
-    background-color: red;
+  background-color: #303030;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.regbutton {
+  background-color: #303030;
+  color: #D4D4D4;
+  border: 2px solid #D4D4D4;
+  padding: 10px;
+  font-size: 14pt;
+  border-radius: 20px;
+}
+
+.regbutton:hover {
+  background-color: #D4D4D4;
+  color: #303030;
+  border: 2px solid #303030;
+}
+
+#content {
+  padding:10px;
+  font-size: 12pt;
 }
 
 #poster {
   width: 300px;
   height:auto;
   margin: auto;
+  display: block;
 }
+
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  body {
+    background-color: #D4D4D4;
+  }
+
+  h2, h3 {
+    font-family: 'Do Hyeon', sans-serif;
+  }
+
+  #header {
+    background-color: #303030;
+    padding: 10px;
+    color: #ffffff;
+
+  }
+
+  .regbutton {
+    background-color: #303030;
+    color: #D4D4D4;
+    border: 2px solid #D4D4D4;
+    padding: 10px;
+    font-size: 14pt;
+    border-radius: 20px;
+  }
+
+  .regbutton:hover {
+    background-color: #D4D4D4;
+    color: #303030;
+    border: 2px solid #303030;
+  }
+
+  #content {
+    padding:10px;
+    font-size: 14pt;
+  }
+
+  #poster {
+    width: 300px;
+    height:auto;
+    margin: auto;
+    display: block;
+  }
+
+  #form {
+    text-align: right;
+    float: right;
+    display: block;
+  }
+
+
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
