@@ -85,13 +85,19 @@ h2, h3 {
   #content {
     padding:10px;
     font-size: 14pt;
+    margin: auto;
+  }
+
+  #content h2 {
+    font-size: 16pt;
   }
 
   #poster {
-    width: 300px;
+    width: 500px;
     height:auto;
     margin: auto;
     display: block;
+    margin-bottom: 20px;
   }
 
   #form {
@@ -99,6 +105,7 @@ h2, h3 {
     float: right;
     display: block;
   }
+
 
 
 }
