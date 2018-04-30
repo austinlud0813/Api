@@ -18,7 +18,8 @@
 @media (min-width: 1200px) { ... }
 
 body {
-  background-color: url("images/background.png");
+  //background-color: url("images/background.png");
+  background-image: url("../images/background.png")
 }
 
 .container {
