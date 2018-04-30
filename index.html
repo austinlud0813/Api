@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Movie Generator</title>
+</head>
+
+<body>
+
+  <div class="row" id="header">
+    <div class="col-md-6">
+      <h2 id="heading">Movie Generator</h2>
+    </div>
+    <div class="col-md-6">
+      <form action="/logic.js">
+        Movie title:
+        <input type="text" name="movie" id="movieSearch">
+        <button type="button" name="button" id="searchButton" data-toggle="modal" data-target="#myModal">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="row" id="content">
+    <div class="col-md-12">
+      <h2 id="title"></h2>
+      <div id="release"></div>
+      <div id="prod"></div>
+      <img src="" id="poster">
+      <div class="col-md-12" id="buttons">
+        <button type="button" name="button" id="aboutBtn"><span class="oi oi-icon-info" title="info"></span> About Movie</button>
+        <button type="button" name="button" id="studioBtn"><span class="oi oi-icon-script" title="script"></span> Studio Info</button>
+        <button type="button" name="button" id="ratingsBtn"><span class="oi oi-icon-thumb-up" title="thumb up"></span> Ratings and Awards</button>
+        <button type="button" name="button" id="websiteBtn"><span class="oi oi-icon-external-link" title="external-link"></span> More Information</button>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+  <!-- Information Modal -->
+  <div id="infoModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">About the Movie</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <div id="rated"></div>
+          <div id="release"></div>
+          <div id="runtime"></div>
+          <div id="genre"></div>
+          <div id="plot"></div>
+          <div id="totalSeasons"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Studio Modal -->
+  <div id="studioModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Studio Information</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <div id="prod"></div>
+          <div id="director"></div>
+          <div id="writer"></div>
+          <div id="actors"></div>
+          <div id="boxoffice"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Ratings Modal -->
+  <div id="ratingsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Ratings and Awards</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <div id="awards"></div>
+          <div id="rating"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="script/logic.js"></script>
+
+</body>
+
+</html>
