@@ -2,7 +2,11 @@
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media (max-width: 576px) { 
+
+/*Elements you want to target go within this media query*/
+
+}
 
 
 #header {
@@ -41,3 +45,5 @@
   height:auto;
   margin: auto;
 }
+
+body {background-image: url("../backgroundpop.jpg")}
